@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+
+html, body {
+    font-family: 'Questrial', 'sans-serif';
+}
+
+html, body, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+$primary-color: #1d4ae9;
+$border-color: #e2e2e2;
+
+// Header's top panel
+.top {
+    width: 100%;
+    padding: 10px 20%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    box-sizing: border-box;
+    border-bottom: 1px solid $border-color;
+
+    // Class for every txt on the top panel
+    &__txt {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1rem;
+        letter-spacing: .20px;
+    }
+
+    // Social box
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        width: 90px;
+
+        // Every icon
+        .fab {
+            font-size: .8rem;
+        }
+    }
+
+    // Every top panel link (anchor)
+    &__link {
+        color: #000;
+    }
+
+    &__link:hover{
+        color: $primary-color;
+    }
+}
+
