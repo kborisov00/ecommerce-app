@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
 
-@mixin container($top-bot-pad) {
-    width: 100%;
-    padding: $top-bot-pad 20%;
-    box-sizing: border-box;
-}
-
 $primary-color: #1d4ae9;
 $primary-hover: #333;
 $border-color: #e2e2e2;
+$container-padding: 20%;
 
 body {
     font-family: 'Questrial', 'sans-serif';
+}
+
+.container {
+    $paddingX: 20%;
+
+    padding-left: $paddingX;
+    padding-right: $paddingX;
+    width: 100%;
+    box-sizing: border-box;
 }

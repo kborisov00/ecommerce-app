@@ -1,6 +1,16 @@
+// header selector
+.header {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
 // top panel --start
 .top {
-    @include container(10px);
+    $padding_x: 10px;
+
+    padding-top: $padding_x;
+    padding-bottom: $padding_x;
 
     display: flex;
     justify-content: space-between;
@@ -8,12 +18,13 @@
     
     border-bottom: 1px solid $border-color;
 
-    // Every txt in the top panel
-    &__txt {
+    // hotline and shipping text
+    &__hotline, &__ship {
         font-size: 14px;
         font-weight: 400;
         line-height: 1rem;
         letter-spacing: .20px;
+        text-align: center;
     }
 
     // Social box
@@ -40,7 +51,10 @@
 
 // mid panel --start
 .mid {
-    @include container(20px);
+    $padding_x: 20px;
+
+    padding-top: $padding_x;
+    padding-bottom: $padding_x;
 
     display: flex;
     justify-content: space-between;
@@ -110,14 +124,19 @@
             color: $primary-hover;
         }
     }
+
+    // mobile only menu
+    .burger-menu {
+        display: none;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
 }
 // mid panel --end
 
 
 // bot panel --start
 .bot {
-    @include container(0);
-
     display: flex;
     align-items: center;
 

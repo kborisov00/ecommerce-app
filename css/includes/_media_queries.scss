@@ -1,0 +1,72 @@
+@media (max-width: 1515px) {
+    .container {
+        $paddingX: 10%;
+
+        padding-left: $paddingX;
+        padding-right: $paddingX;
+    }
+}
+
+@media (max-width: 1153px) {
+    .container {
+        $paddingX: 3%;
+
+        padding-left: $paddingX;
+        padding-right: $paddingX;
+    }
+
+
+}
+
+// mobile mode
+@media (max-width: 975px) {
+    // fix container padding
+    .container {
+        $paddingX: 0;
+
+        padding-left: $paddingX;
+        padding-right: $paddingX;
+    }
+
+    // header
+    .header {
+        position: fixed;
+        box-shadow: 0 0 10px rgba(0,0,0,.2);
+    }
+
+    // main section
+    .main {
+        padding-top: 90.58px;
+    }
+
+    // remove header items
+    .top__hotline, .top__social, .mid__search, .mid__cart, .bot {
+        display: none;
+    }
+
+    .top {
+        background-color: $primary-color;
+
+        &__ship {
+            width: 100%;
+            padding: 0 10px;
+            color: #fff;
+        }
+    }
+
+    // header's mid panel
+    .mid {
+        padding: 15px 30px;
+
+        // header logo
+        &__logo {
+            width: 180px;
+        }
+
+        // header burger menu
+        .burger-menu {
+            display: block;
+        }
+    }
+
+}
