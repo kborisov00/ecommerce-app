@@ -141,17 +141,21 @@ html, body, ul, p {
 }
 
 .bot {
+  width: 100%;
+  padding: 0 20%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
   border-bottom: 1px solid #e2e2e2;
+}
+
+.bot__menu {
+  padding: 0 30px;
 }
 
 .bot__link {
@@ -169,7 +173,6 @@ html, body, ul, p {
 }
 
 .bot__categories {
-  padding: 15px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,22 +182,19 @@ html, body, ul, p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 15px 30px;
+  font-size: 18px;
   width: 240px;
   background-color: #1d4ae9;
   border-radius: 6px 6px 0px 0;
   color: #fff;
+  cursor: pointer;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
-  font-size: 18px;
-  cursor: pointer;
 }
 
 .bot__categories:hover {
   background-color: #333;
-}
-
-.bot__menu {
-  padding: 0 30px;
 }
 
 .bot__txt {
