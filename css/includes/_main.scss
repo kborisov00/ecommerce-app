@@ -1,0 +1,66 @@
+// top slider
+.slider {
+    border-bottom: 1px solid $border-color;
+
+    // background image
+    &__img {
+        height: 60vh;
+        width: 100%;
+
+        object-fit: cover;
+    }
+
+    // content box
+    &__content {
+        position: absolute;
+        top: 6%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        text-align: center;
+        line-height: 20px;
+    }
+
+    // call to action button
+    &__cta {
+        font-size: 16px;
+        padding: 10px 20px;
+        font-weight: 800;
+        font-family: 'Questrial', 'sans-serif';
+
+        background-color: $primary-color;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+
+        transition: 300ms ease;
+    }
+
+    // --hover state
+    &__cta:hover {
+        background-color: $primary-hover;
+    }
+}
+
+// Animate reveal content
+.slick-active .anim-content {
+    animation: fadeUp forwards;
+    animation-duration: 500ms;
+    animation-timing-function: ease;
+    animation-delay: 300ms;
+    opacity: 0;
+}
+
+// Animation
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
