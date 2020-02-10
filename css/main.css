@@ -8,6 +8,10 @@ html, body, ul, p {
   padding: 0;
 }
 
+.slick-slide:focus {
+  outline: none;
+}
+
 .top {
   width: 100%;
   padding: 10px 20%;
