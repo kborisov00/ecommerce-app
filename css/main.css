@@ -13,6 +13,7 @@ html, body {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .preloader {
@@ -470,6 +471,8 @@ html, body {
   text-decoration: none;
   color: #000;
   font-size: 18px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .best-seller__link:hover {
@@ -553,6 +556,25 @@ html, body {
   .slider__content h1 {
     font-size: 36px;
     margin: 0;
+  }
+}
+
+@media (max-width: 660px) {
+  .best-seller__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .best-seller__title {
+    width: 100%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .best-seller__arrows {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

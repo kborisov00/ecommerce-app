@@ -95,3 +95,22 @@
     }
 
 }
+
+@media (max-width: 660px) {
+    .best-seller {
+        &__header {
+            flex-direction: column;
+        }
+    
+        &__title {
+            width: 100%;
+            text-align: center;
+    
+            justify-content: center;
+        }
+
+        &__arrows {
+            display: none;
+        }
+    }
+}

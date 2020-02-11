@@ -13,6 +13,14 @@ $(document).ready(function () {
     $('.best-seller__slider').slick({
         prevArrow: $('.best-seller__arrows .fa-arrow-circle-left'),
         nextArrow: $('.best-seller__arrows .fa-arrow-circle-right'),
+        responsive: [
+            {
+              breakpoint: 660,
+              settings: {
+                arrows: false,
+              }
+            },
+          ]
     });
 
     // Header's categories menu
