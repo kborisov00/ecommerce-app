@@ -6,6 +6,7 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 4000,
         dots: true,
+        touchThreshold: 10,
     });
 
     // best seller slider init
