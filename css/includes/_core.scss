@@ -5,9 +5,10 @@ $primary-hover: #333;
 $border-color: #e2e2e2;
 $container-padding: 20%;
 
-body {
+html, body {
     font-family: 'Questrial', 'sans-serif';
     position: relative;
+    box-sizing: border-box;
 }
 
 // page preloader
