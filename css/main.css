@@ -365,6 +365,9 @@ html, body {
           transform: translateX(-50%);
   text-align: center;
   line-height: 20px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .slider__cta {
@@ -440,11 +443,53 @@ html, body {
 .best-seller__slide .title {
   font-weight: 400;
   padding-bottom: 10px;
-  margin: 10px 0;
+  margin: 2% 0;
 }
 
 .best-seller__slide .price {
   margin: 0;
+}
+
+.best-seller__slide .action {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.best-seller__slide .action .fas {
+  padding: 0 10px;
+  color: #333;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.best-seller__slide .action .fas:hover {
+  color: #1d4ae9;
+}
+
+.best-seller__slide .action button {
+  width: 100%;
+  margin-right: auto;
+  border: none;
+  background-color: #1d4ae9;
+  color: #fff;
+  font-family: 'Questrial', 'sans-serif';
+  font-size: 16px;
+  font-weight: 800;
+  padding: 10px 15px;
+  cursor: pointer;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
+}
+
+.best-seller__slide .action button:hover {
+  background-color: #333;
 }
 
 .best-seller__header {
