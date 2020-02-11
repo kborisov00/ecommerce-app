@@ -29,15 +29,13 @@ body {
 
     // dots
     button {
-        height: 20px;
-        width: 20px;
+        height: 15px;
+        width: 15px;
         margin: 0 20px;
 
         border: none;
         border-radius: 100%;
-        background-color: none;
         color: transparent;
-        backdrop-filter: invert(100%);
 
         cursor: pointer;
     }
