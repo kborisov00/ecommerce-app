@@ -6,7 +6,7 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 4000,
         dots: true,
-        touchThreshold: 10,
+        touchThreshold: 15,
     });
 
     // best seller slider init
@@ -14,6 +14,7 @@ $(document).ready(function () {
         prevArrow: $('.best-seller__arrows .fa-arrow-circle-left'),
         nextArrow: $('.best-seller__arrows .fa-arrow-circle-right'),
         slidesToShow: 5,
+        touchThreshold: 10,
         responsive: [
             {
               breakpoint: 660,
