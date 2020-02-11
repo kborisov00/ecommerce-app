@@ -13,7 +13,7 @@ html, body {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .preloader {
@@ -427,6 +427,15 @@ html, body {
   margin-top: 20px;
 }
 
+.best-seller__slide {
+  width: 10%;
+  border-right: 1px solid #e2e2e2;
+}
+
+.best-seller__slide img {
+  width: 100%;
+}
+
 .best-seller__header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -572,6 +581,9 @@ html, body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .best-seller__nav {
+    padding: 20px 0;
   }
   .best-seller__arrows {
     display: none;
