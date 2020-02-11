@@ -5,6 +5,10 @@
         padding-left: $paddingX;
         padding-right: $paddingX;
     }
+
+    .slick-dots {
+        width: 10%;
+    }
 }
 
 @media (max-width: 1153px) {
@@ -15,7 +19,9 @@
         padding-right: $paddingX;
     }
 
-
+    .slick-dots {
+        width: 20%;
+    }
 }
 
 // mobile mode
@@ -26,6 +32,15 @@
 
         padding-left: $paddingX;
         padding-right: $paddingX;
+    }
+
+    .slick-dots {
+        width: 40%;
+
+        button {
+            width: 15px;
+            height: 15px;
+        }
     }
 
     // header
@@ -72,11 +87,10 @@
     .slider {
         
         &__img {
-            height: calc(100vh - 111.58px);
+            height: calc(95vh - 111.58px);
         }
     
         &__content {
-            padding-top: 20px;
             line-height: 40px;
             // background: red;
             h3 {
