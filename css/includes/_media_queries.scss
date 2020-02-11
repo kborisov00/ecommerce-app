@@ -5,27 +5,9 @@
         padding-left: $paddingX;
         padding-right: $paddingX;
     }
-
-    .slick-dots {
-        width: 10%;
-    }
 }
 
-@media (max-width: 1153px) {
-    .container {
-        $paddingX: 3%;
-
-        padding-left: $paddingX;
-        padding-right: $paddingX;
-    }
-
-    .slick-dots {
-        width: 20%;
-    }
-}
-
-// mobile mode
-@media (max-width: 975px) {
+@media (max-width: 1064px) {
     // fix container padding
     .container {
         $paddingX: 0;
@@ -34,9 +16,10 @@
         padding-right: $paddingX;
     }
 
+    // slider dots wrapper
     .slick-dots {
-        width: 40%;
 
+        // dots
         button {
             width: 15px;
             height: 15px;
@@ -59,6 +42,7 @@
         display: none;
     }
 
+    // header's top panel
     .top {
         background-color: $primary-color;
 
@@ -84,20 +68,25 @@
         }
     }
 
+    // slider wrapper
     .slider {
         
+        // slider iamge
         &__img {
             height: calc(95vh - 111.58px);
         }
     
+        // slider content
         &__content {
             line-height: 40px;
-            // background: red;
+            
+            // sub title
             h3 {
                 font-size: 18px;
                 margin: 0;
             }
 
+            // title
             h1 {
                 font-size: 36px;
                 margin: 0;

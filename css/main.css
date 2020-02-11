@@ -29,18 +29,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   list-style: none;
-  width: 10%;
 }
 
 .slick-dots button {
-  border: none;
-  border-radius: 100%;
   height: 20px;
   width: 20px;
+  margin: 0 20px;
+  border: none;
+  border-radius: 100%;
   background-color: none;
   color: transparent;
   -webkit-backdrop-filter: invert(100%);
@@ -222,6 +219,34 @@ body {
   color: #1d4ae9;
 }
 
+.bot__dropdown {
+  position: relative;
+}
+
+.bot__dropdown-menu {
+  position: absolute;
+  width: 300px;
+  display: none;
+  list-style: none;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.bot .active {
+  display: block;
+}
+
+.bot__item {
+  font-size: 16px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.bot__item:hover {
+  background-color: #f3f3f3;
+}
+
 .bot__categories {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,28 +362,12 @@ body {
     padding-left: 10%;
     padding-right: 10%;
   }
-  .slick-dots {
-    width: 10%;
-  }
 }
 
-@media (max-width: 1153px) {
-  .container {
-    padding-left: 3%;
-    padding-right: 3%;
-  }
-  .slick-dots {
-    width: 20%;
-  }
-}
-
-@media (max-width: 975px) {
+@media (max-width: 1064px) {
   .container {
     padding-left: 0;
     padding-right: 0;
-  }
-  .slick-dots {
-    width: 40%;
   }
   .slick-dots button {
     width: 15px;
