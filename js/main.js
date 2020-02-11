@@ -1,11 +1,17 @@
 $(document).ready(function () {
-    // Slider init
+    // top slider init
     $('.slider').slick({
         arrows: false,
         fade: true,
         autoplay: true,
         autoplaySpeed: 4000,
         dots: true,
+    });
+
+    // best seller slider init
+    $('.best-seller__slider').slick({
+        prevArrow: $('.best-seller__arrows .fa-arrow-circle-left'),
+        nextArrow: $('.best-seller__arrows .fa-arrow-circle-right'),
     });
 
     // Header's categories menu

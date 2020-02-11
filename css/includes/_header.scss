@@ -28,6 +28,11 @@
         text-align: center;
     }
 
+    // shipping text
+    &__ship {
+        color: $primary-color;
+    }
+
     // Social box
     &__social {
         display: flex;
