@@ -24,8 +24,8 @@ body {
   background-position: center;
   background-size: 100px 100px;
   overflow: hidden;
-  -webkit-transition: 300ms ease;
-  transition: 300ms ease;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
 }
 
 .container {
