@@ -120,21 +120,25 @@ html, body {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
   background: #fff;
   overflow: hidden;
   -webkit-transition: 300ms ease;
   transition: 300ms ease;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
+}
+
+.sidebar__ext {
+  font-size: 36px;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .sidebar--active {
   -webkit-transform: translateX(10vw);
           transform: translateX(10vw);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .header {
@@ -142,6 +146,8 @@ html, body {
   width: 100%;
   z-index: 20;
   background-color: #fff;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 .top {
@@ -367,6 +373,10 @@ html, body {
   margin-left: auto;
 }
 
+.main {
+  position: relative;
+}
+
 .slider {
   border-bottom: 1px solid #e2e2e2;
 }
@@ -452,7 +462,7 @@ html, body {
   margin: 20px 0;
 }
 
-.best-seller__slider {
+.best-seller__slider, .best-seller__sliderr {
   border: 1px solid #e2e2e2;
 }
 
@@ -563,11 +573,11 @@ html, body {
   color: #1d4ae9;
 }
 
-.best-seller__arrows {
+.best-seller__arrows, .best-seller__arrows1 {
   margin-left: auto;
 }
 
-.best-seller__arrows .fas {
+.best-seller__arrows .fas, .best-seller__arrows1 .fas {
   font-size: 22px;
   padding: 10px;
   cursor: pointer;
@@ -579,7 +589,7 @@ html, body {
   transition: 300ms ease;
 }
 
-.best-seller__arrows .fas:hover {
+.best-seller__arrows .fas:hover, .best-seller__arrows1 .fas:hover {
   color: #1d4ae9;
 }
 
@@ -643,8 +653,8 @@ html, body {
 }
 
 .footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -653,6 +663,7 @@ html, body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  border-top: 1px solid #e2e2e2;
 }
 
 .footer__menu {
@@ -819,7 +830,7 @@ html, body {
   .best-seller__nav {
     padding: 20px 0;
   }
-  .best-seller__arrows {
+  .best-seller__arrows, .best-seller__arrows1 {
     display: none;
   }
   .newsletter__form {

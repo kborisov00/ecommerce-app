@@ -1,3 +1,7 @@
+.main {
+    position: relative;
+}
+
 // top slider
 .slider {
     border-bottom: 1px solid $border-color;
@@ -74,7 +78,8 @@
     margin: 20px 0;
 
     // slider wrapper
-    &__slider {
+    &__slider,
+    &__sliderr {
         border: 1px solid $border-color;
     }
 
@@ -185,7 +190,8 @@
     }
 
     // slider arrows wrapper
-    &__arrows {
+    &__arrows,
+    &__arrows1 {
         margin-left: auto;
 
         // arrow icons
@@ -275,7 +281,7 @@
 
 // footer panel
 .footer {
-    $paddingX: 30px;
+    $paddingX: 10px;
 
     padding-top: $paddingX;
     padding-bottom: $paddingX;
@@ -283,6 +289,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    border-top: 1px solid $border-color;
 
     // footer menu wrapper
     &__menu {

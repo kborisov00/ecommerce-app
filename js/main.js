@@ -1,7 +1,3 @@
-function openMenu () {
-    $('.sidebar').toggleClass('sidebar--active');
-}
-
 $(document).ready(function () {
     // top slider init
     $('.slider').slick({
@@ -17,6 +13,28 @@ $(document).ready(function () {
     $('.best-seller__slider').slick({
         prevArrow: $('.best-seller__arrows .fa-arrow-circle-left'),
         nextArrow: $('.best-seller__arrows .fa-arrow-circle-right'),
+        slidesToShow: 5,
+        touchThreshold: 10,
+        responsive: [
+            {
+              breakpoint: 660,
+              settings: {
+                arrows: false,
+                slidesToShow: 2,
+              }
+            },
+            {
+                breakpoint: 1110,
+                settings: {
+                  slidesToShow: 3,
+                }
+            },
+          ]
+    });
+
+    $('.best-seller__sliderr').slick({
+        prevArrow: $('.best-seller__arrows1 .fa-arrow-circle-left'),
+        nextArrow: $('.best-seller__arrows1 .fa-arrow-circle-right'),
         slidesToShow: 5,
         touchThreshold: 10,
         responsive: [
