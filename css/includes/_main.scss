@@ -273,6 +273,7 @@
     }
 }
 
+// footer panel
 .footer {
     $paddingX: 30px;
 
@@ -283,22 +284,27 @@
     justify-content: space-between;
     flex-wrap: wrap;
 
+    // footer menu wrapper
     &__menu {
         display: flex;
         flex-direction: column;
-        padding: 10px 20px;
+        padding: 10px 20px 0 20px;
+        justify-content: space-between;
     }
 
+    // footer title
     &__title {
         font-size: 16px;
         margin: 0 0 20px 0;
     }
 
+    // footer menu
     &__list {
         display: flex;
         flex-direction: column;
     }
 
+    // footer menu item
     &__item {
         font-size: 18px;
         padding: 5px 0;
@@ -306,27 +312,26 @@
         color: #000;
         transition: 300ms ease;
 
-        &:hover > .fas {
-            opacity: 1;
-            visibility: visible;
-        }
-
+        // menu item icons
         .fas, .fab {
             font-size: 14px;
             width: 20px;
             transition: 300ms ease;
         }
 
+        // item--hover state
         &:hover {
             text-decoration: underline;
             transform: translateX(10px);
         }
     }
 
+    // footer text
     &__txt {
         font-size: 18px;
         padding: 10px 0;
 
+        // footer text icon
         .fas {
             width: 20px;
         }
