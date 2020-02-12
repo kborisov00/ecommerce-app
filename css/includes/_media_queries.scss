@@ -94,6 +94,32 @@
         }
     }
 
+    .newsletter {
+        flex-direction: column;
+
+        &__info {
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        &__subtitle {
+            margin-top: 10px;
+        }
+
+        &__form {
+            margin-top: 20px;
+            width: 70%;
+
+            input[type="text"] {
+                width: 70%;
+            }
+
+            button {
+                width: 30%;
+                padding: 0 10px;
+            }
+        }
+    }
 }
 
 @media (max-width: 660px) {
@@ -116,5 +142,9 @@
         &__arrows {
             display: none;
         }
+    }
+
+    .newsletter__form {
+        width: 90%;
     }
 }

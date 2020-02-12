@@ -8,4 +8,4 @@ Project's stack:
     - Slick.js (carousel library);  
     - Font Awesome - Icons API;  
 
-The website is only developed by me. I do not own the rights for the design, nor the stock pictures included.
+I do not own the rights for the design, nor the stock-pictures included.

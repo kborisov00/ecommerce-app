@@ -69,79 +69,86 @@
     }
 }
 
+// best seller section
 .best-seller {
-    margin-top: 20px;
+    margin: 20px 0;
 
+    // slider wrapper
+    &__slider {
+        border: 1px solid $border-color;
+    }
+
+    // slider's slide
     &__slide {
         width: 10%;
         border-right: 1px solid $border-color;
         padding: 0 20px;
-
+        
+        // slide image
         .image {
             width: 100%;
+            transition: 300ms ease;
+            cursor: pointer;
         }
 
+        // slide image--hover state
+        .image:hover {
+            opacity: .5;
+        }
+
+
+        // slide image title
         .title {
             font-weight: 400;
             padding-bottom: 10px;
-            margin: 2% 0;
+            margin: 5% 0;
+            // max-height: 20px;
         }
 
+        // slide image price
         .price {
             margin: 0;
         }
 
-        .action {
+        // add to cart button
+        button {
+            margin: 10px 0;
             width: 100%;
-            display: flex;
-            padding: 10px 0;
-            flex-direction: column;
-
-            .fas {
-                padding: 0 10px;
-                color: $primary-hover;
-                transition: 300ms ease;
-
-                &:hover {
-                    color: $primary-color;
-                }
-            }
-            
-            button {
-                width: 100%;
-                margin-right: auto;
-                border: none;
-                background-color: $primary-color;
-                color: #fff;
-                font-family: 'Questrial', 'sans-serif';
-                font-size: 16px;
-                font-weight: 800;
-                padding: 10px 15px;
-                cursor: pointer;
-                transition: 300ms ease;
-
-                &:hover {
-                    background-color: $primary-hover;
-                }
+            margin-right: auto;
+            border: none;
+            background-color: $primary-color;
+            color: #fff;
+            font-family: 'Questrial', 'sans-serif';
+            font-size: 16px;
+            font-weight: 800;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: 300ms ease;
+    
+            &:hover {
+                background-color: $primary-hover;
             }
         }
-
     }
     
+    // best seller header
     &__header {
         display: flex;
         align-items: center;
         background-color: #f3f3f3;
 
         border-top: 3px solid $primary-color;
+        border-right: 1px solid $border-color;
     }
 
+    // best seller title
     &__title {
         display: flex;
         align-items: center;
         background: $primary-color;
         color: #fff;
         padding: 15px 10px;
+        overflow: hidden;
 
         & > * {
             margin: 0;
@@ -150,12 +157,14 @@
         }
     }
 
+    // best seller navigation
     &__nav {
         display: flex;
         align-items: center;
         padding: 0 10px;
     }
 
+    // best seller navigation links
     &__link {
         padding: 0 20px;
         text-decoration: none;
@@ -164,13 +173,16 @@
         flex-wrap: wrap;
     }
 
+    // best seller navigation links--hover state
     &__link:hover {
         color: $primary-color;
     }
 
+    // slider arrows wrapper
     &__arrows {
         margin-left: auto;
 
+        // arrow icons
         .fas {
             font-size: 22px;
             padding: 10px;
@@ -182,6 +194,65 @@
 
         .fas:hover {
             color: $primary-color;
+        }
+    }
+}
+
+.newsletter {
+    $paddingX: 30px;
+
+    padding-top: $paddingX;
+    padding-bottom: $paddingX;
+
+    background-color: $primary-color;
+    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__info {
+        // line-height: 40px;
+
+        & > * {
+            margin: 0;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__form {
+        color: #000;
+        display: flex;
+
+        input[type="text"] {
+            padding: 10px 20px;
+            font-size: 14px;
+            border-radius: 10px 0 0 10px;
+            border: none;
+        }
+
+        button {
+            padding: 10px 30px;
+            border-radius: 0 10px 10px 0;
+            border: none;
+            font-weight: 800;
+            color: #fff;
+            background-color: $primary-hover;
+            cursor: pointer;
+            text-align: center;
+
+            transition: 300ms ease;
+
+            &:hover {
+                background-color: #fff;
+                color: $primary-hover;
+            }
         }
     }
 }
