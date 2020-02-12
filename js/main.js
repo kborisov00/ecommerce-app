@@ -1,3 +1,7 @@
+function openMenu () {
+    $('.sidebar').toggleClass('sidebar--active');
+}
+
 $(document).ready(function () {
     // top slider init
     $('.slider').slick({
