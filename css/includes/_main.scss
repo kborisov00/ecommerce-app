@@ -345,3 +345,15 @@
         }
     }
 }
+
+.companies {
+    $paddingX: 20px;
+    padding-top: $paddingX;
+    padding-bottom: $paddingX;
+
+    background-color: $primary-color;   
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    cursor: pointer;
+}

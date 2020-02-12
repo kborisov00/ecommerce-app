@@ -54,6 +54,23 @@ $(document).ready(function () {
           ]
     });
 
+    // companies slider init
+    $('.companies').slick({
+        slidesToShow: 5,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        touchThreshold: 10,
+        responsive: [
+            {
+              breakpoint: 849,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+          ]
+    });
+
     // Header's categories menu
     $('.bot__categories').on('click', function () {
         $('.bot__dropdown-menu').toggleClass('active');

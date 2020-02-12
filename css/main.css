@@ -726,6 +726,16 @@ html, body {
   width: 20px;
 }
 
+.companies {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #1d4ae9;
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  cursor: pointer;
+}
+
 @media (max-width: 1515px) {
   .container {
     padding-left: 10%;
