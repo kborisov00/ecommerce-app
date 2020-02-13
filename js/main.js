@@ -15,6 +15,7 @@ $(document).ready(function () {
         nextArrow: $('.best-seller__arrows .fa-arrow-circle-right'),
         slidesToShow: 5,
         touchThreshold: 10,
+        centerMode: true,
         responsive: [
             {
               breakpoint: 660,
@@ -37,6 +38,7 @@ $(document).ready(function () {
         nextArrow: $('.best-seller__arrows1 .fa-arrow-circle-right'),
         slidesToShow: 5,
         touchThreshold: 10,
+        centerMode: true,
         responsive: [
             {
               breakpoint: 660,
